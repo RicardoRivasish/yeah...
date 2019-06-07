@@ -1,0 +1,115 @@
+#!/usr/bin/env python3.7.2
+print("=============================================================================================================")
+
+print("Los 2 valores booleanos son -True- y -False- y así se escriben sin los guiones")
+
+print("Los 3 operadores booleanos son -or- -and- y -not- y así se escriben obviamente sin los guiones")
+
+cero=[False,False]
+uno=[False,True]
+dos=[True,False]
+tres=[True,True]
+print("===============================================================================================================")
+print("Selecciona la tabla que quieras generar colocando cualquiera de los números que se muestran dentro de los parentésis")
+print("Tabla (1)And (2)Or (3)Not")
+n=int(input())
+if n==1:
+    print("And")
+    cero.append(False)
+    print(cero)
+    cero.pop()
+    uno.append(False)
+    print(uno)
+    uno.pop()
+    dos.append(False)
+    print(dos)
+    dos.pop()
+    tres.append(True)
+    print(tres)
+    tres.pop()
+elif n==2:
+    print("Or")
+    cero.append(False)
+    print(cero)
+    cero.pop()
+    uno.append(True)
+    print(uno)
+    uno.pop()
+    dos.append(True)
+    print(dos)
+    dos.pop()
+    tres.append(True)
+    print(tres)
+    tres.pop()
+elif n==3:
+    print("Not")
+    print(uno)
+    print(dos)
+else:
+    print('error')
+print("===============================================================================")
+print("Los 6 operadores de comparación son los siguientes")
+print("== , evalúa como verdadero si 2 variables son iguales")
+print("!= ,evalúa como verdadero si 2 variables son diferentes")
+print("> , verdadero si el operador a la izquierda es mayor que el de la derecha")
+print("< , verdadero si el operador a la izquierda es menor que el de la derecha")
+print(">= verdadero si el operador a la izquierda es mayor o igual al de la derecha")
+print("<= verdadero si el operador a la izquierda es menor o igual al de la derecha")
+print("================================================================================")
+print("La sentencia condicional if se usa para tomar decisiones, este evaluá básicamente una ")
+print("operación lógica, es decir una expresión que de como resultado True o False, y ejecuta")
+print("la pieza de código siguiente siempre y cuando el resultado sea verdadero.")
+print("==================================================================================")
+print("Si alguna vez se encuentra atascado en un bucle se recomienda presionar las teclas ctrl + c")
+print("Existen formas mas sofisticadas de matar un bucle usando kill y en protocolo 9 pero la mayoría")
+print("prefiere usar la combinación de teclas")
+print("===========================================================================================")
+print("La sentencia continue hace que pase de nuevo al principio del bucle aunque no se haya terminado de ejecutar el ciclo anterior.")
+print("Adicionalmente existe una forma alternativa de interrumpir o cortar los ciclos utilizando la palabra reservada break.")
+print("Esta nos permite salir del ciclo incluso si la expresión evaluada en while (o en otro ciclo como for) permanece siendo verdadera.")
+print("===========================================================================================")
+print("El tipo range() con un único argumento se escribe range(n) y crea una lista inmutable de n números enteros consecutivos que empieza en 0 y acaba en n - 1.")
+print("Para ver los valores del range(), es necesario convertirlo a lista mediante la función list().")
+print("El tipo range con dos argumentos se escribe range(m, n) y crea una lista inmutable de enteros consecutivos que empieza en m y acaba en n - 1.")
+print("El tipo range con tres argumentos se escribe range(m, n, p) y crea una lista inmutable de enteros que empieza en m y acaba justo antes de superar o ")
+print("igualar a n, aumentando los valores de p en p. Si p es negativo, los valores van disminuyendo de p en p.")
+print("============================================================================================")
+print("Coloca un número entero positivo para generarla suma de los primeros n numeros:")
+x=int(input())
+y=int(0)
+for p in range(x+1):
+    y=(y+p)
+    print(p)
+    print(y)
+print("=============================================================================================")
+print("while del 0 al 10")
+y=0
+while y<11:
+    print(y)
+    y=y+1
+print("============================================================================================")
+print("Inserte un entero positivo para ver los números impares positivos menores que el mismo")
+m=int(input())
+u=(False)
+for p in range(m):
+    if u==False:
+        u=(True)
+    elif u==True:
+        u=False
+        print(p)
+print("============================================================================================")
+print("Inserte un entero positivo generar una serie de fibonacci con ese entero")
+y=int(input())
+a=int(0)
+b=int(1)
+while b<y:
+    print(b)
+    a,b=b,a+b
+print("============================================================================================")
+print("Inserte un número para producir el factorial")
+x=int(input())
+f=1
+for i in range(x):
+    f=f*x
+    x=x-1
+    print(f)
